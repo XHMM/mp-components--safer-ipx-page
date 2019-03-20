@@ -1,0 +1,3 @@
+<comp safer-ipx-page-class="page" pageHeight="calc(300px - 100px)">
+  <view>内容1</view> <view style="position: absolute;bottom:0;">内容2</view>
+</comp>

@@ -1,0 +1,15 @@
+<!--
+使用场景：想要避免页面内容和iphone x的底部黑线重叠
+
+使用方法：
+<safer-ipx-page safer-ipx-page-class="原本给page组件的class先写给该属性">
+  原先page组件下的内容写在这里面
+</safer-ipx-page>
+
+注意使用：
+1. 当页面使用了fixed布局时，如果是搭配bottom来使用的话，请改为absolute形式，因为fixed布局是相对于原页面布局的，会使该组件失效
+-->
+
+<view class="safer-ipx-page-class" style="position: relative;height:{{isIpx ? 'calc('+pageHeight+' - 34px)' : ''}};box-sizing: border-box;">
+  <slot></slot>
+</view>
